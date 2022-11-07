@@ -1,0 +1,37 @@
+.card-article {
+    text-decoration: none;
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        height: 300px;
+        @include desktop-only {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 140%;
+        margin: 15px 0;
+        max-width: 200px;
+        @include desktop-only {
+            max-width: 300px;
+            font-size: 18px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        & > p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            @include desktop-only {
+                max-width: 300px;
+                font-size: 16px;
+            }
+        }
+    }
+}

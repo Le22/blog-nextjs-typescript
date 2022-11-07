@@ -1,0 +1,17 @@
+.page-error {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 60px 0;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 150%;
+        transition: $transition;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

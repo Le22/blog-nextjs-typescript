@@ -1,0 +1,12 @@
+$color-dark: #32415c;
+$color-grey: #eee;
+$color-white: #fff;
+$color-primary: #1f78ff;
+$color-primary-darken: darken($color-primary, 10);
+
+$breakpoints: (
+    tablette: 500px,
+    desktop: 900px,
+);
+
+$transition: all 0.3s ease-in-out;

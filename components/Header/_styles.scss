@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: calc(100% - 60px);
+    padding: 15px 30px;
+    background-color: $color-white;
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: $color-primary;
+        color: $color-white;
+        background-color: $color-primary;
+        padding: 10px 15px;
+        border-radius: 50px;
+        transition: $transition;
+        &:hover {
+            text-decoration: underline;
+            background-color: $color-primary-darken;
+        }
+    }
+}

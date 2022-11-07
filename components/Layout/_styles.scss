@@ -1,0 +1,14 @@
+.main {
+    margin: 0 30px;
+    @include tablette-only {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 400px;
+        margin: auto;
+    }
+    @include desktop-only {
+        width: 800px;
+    }
+}
