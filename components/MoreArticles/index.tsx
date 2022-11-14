@@ -6,6 +6,7 @@ type Props = {
     data: PostType[]
 }
 
+// More Articles
 export default function MoreArticles(data: Props) {
     const articles = data.data
     return (
@@ -28,7 +29,7 @@ export default function MoreArticles(data: Props) {
             <div className="more-articles__link">
                 <Link href={"/blog"}>
                     <a className="more-articles__link__content">
-                        Découvrir plus d&apos;articles
+                        Discover more articles
                     </a>
                 </Link>
             </div>
