@@ -2,7 +2,7 @@
 
 .footer {
     margin-top: 120px;
-    width: 100%;
+    width: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-dark;
