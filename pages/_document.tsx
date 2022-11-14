@@ -8,7 +8,7 @@ export default function Document() {
                 <link rel="icon" href="favicon.ico" />
 
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@GirardLouisEt" />
+                <meta name="twitter:site" content="@user" />
             </Head>
             <body>
                 <Main />

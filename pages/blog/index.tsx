@@ -1,5 +1,4 @@
 import Image from "next/future/image"
-import { useEffect, useState } from "react"
 import CardArticle from "../../components/CardArticle"
 import HeadSEO from "../../components/HeadSEO"
 
@@ -13,9 +12,9 @@ export default function Blog({ allPostsData }: Props) {
     return (
         <>
             <HeadSEO
-                title="Blog  - Louis-Étienne Girard - Développeur Front-End React"
-                description="Passionné de longue date pour le développement web, je ne cesse de partager mes connaissances dans le domaine digital."
-                image="media/louis-etienne-girard-developpeur-front-end-react.png"
+                title="NextBlog"
+                description="NextBlog"
+                image="media/logo.png"
             />
             <div className="blog">
                 <Image
@@ -23,12 +22,12 @@ export default function Blog({ allPostsData }: Props) {
                     src={"/media/blog-presentation.jpg"}
                     width={500}
                     height={200}
-                    alt="Le Blog de Louis-Étienne Girard"
+                    alt="NextBlog"
                 />
-                <h1 className="blog__title">Le Blog</h1>
+                <h1 className="blog__title">The Blog</h1>
                 <h2 className="blog__info">
-                    Retrouvez des articles sur le Développement Front-End
-                    notamment ReactJs, NextJS ou encore Sass.
+                    Find the list of the latest articles that talk about your
+                    favorite subject.
                 </h2>
                 <div className="blog__articles">
                     <div className="blog__articles__list">

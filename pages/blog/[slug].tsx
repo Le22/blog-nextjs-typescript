@@ -64,9 +64,15 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+type Params = {
+    params: {
+        slug: string
+    }
+}
+
+export async function getStaticProps({ params }: Params) {
     const allPostsData = getSortedPostsData()
-    const fileName = fs.readFileSync(`posts/${slug}.md`, "utf-8")
+    const fileName = fs.readFileSync(`posts/${params.slug}.md`, "utf-8")
     const { data: frontmatter, content } = matter(fileName)
     return {
         props: {
